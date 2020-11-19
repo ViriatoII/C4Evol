@@ -10,5 +10,5 @@ The various vcf files are used to build a SNP matrix with all called positions a
 a) There is no variant. Genotype has same sequence as reference in that position.    
 b) No read maps to that position. There is probably a large SV in that area, or maybe sequencing is incomplete. 
 
-Therefore, the script fill_ambiguous_positions.sh goes back to the bam files and extracts the sequence from the reads, which should equal REF. If it doesn't, the position is left empty, with certainty finally.
+The script fill_ambiguous_positions.sh goes back to the bam files and extracts the sequence from the reads, which should equal REF. If it doesn't, the position is left empty, with final sureness (case b).
 
